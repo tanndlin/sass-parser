@@ -1,8 +1,10 @@
+#[derive(Debug, PartialEq, Clone)]
 pub struct Style {
     pub name: String,
     pub value: String,
 }
 
+#[derive(Debug, PartialEq, Clone)]
 pub struct Class {
     pub selector: String,
     pub styles: Vec<Style>,
