@@ -32,7 +32,11 @@ impl Lexer {
     }
 
     fn next_token(&mut self) -> Token {
-        let whitespace = [' ', '\n', '\r', '\t'];
+        if self.position >= self.input.len() {
+            return Token::Eof;
+        }
+
+        let whitespace = ['\n', '\r', '\t', ' '];
         while whitespace.contains(&self.ch) {
             self.read_char();
         }
@@ -43,6 +47,13 @@ impl Lexer {
             ';' => Token::SemiColon,
             ':' => Token::Colon,
             '\0' => Token::Eof,
+
+            // Selectors
+            '.' => Token::Class,
+            '>' => Token::DirectChild,
+
+            '&' => Token::Root,
+
             _ => Token::Ident(self.read_identifier()),
         };
 
@@ -79,4 +90,81 @@ impl Lexer {
 
 fn is_letter(ch: char) -> bool {
     ch.is_alphabetic() || ch == '_'
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_single_char_tokens() {
+        let input = "{};:";
+        let mut lexer = Lexer::new(input.to_string());
+
+        let expected_tokens = vec![
+            Token::LBrace,
+            Token::RBrace,
+            Token::SemiColon,
+            Token::Colon,
+            Token::Eof,
+        ];
+
+        for expected in expected_tokens {
+            let token = lexer.next_token();
+            assert_eq!(token, expected);
+        }
+    }
+
+    #[test]
+    fn test_selectors() {
+        let input = ". > ";
+        let mut lexer = Lexer::new(input.to_string());
+
+        let expected_tokens = vec![Token::Class, Token::DirectChild, Token::Eof];
+
+        for expected in expected_tokens {
+            let token = lexer.next_token();
+            assert_eq!(token, expected);
+        }
+    }
+
+    #[test]
+    fn test_identifiers() {
+        let input = "hello world";
+        let mut lexer = Lexer::new(input.to_string());
+
+        let expected_tokens = vec![
+            Token::Ident("hello".to_string()),
+            Token::Ident("world".to_string()),
+            Token::Eof,
+        ];
+
+        for expected in expected_tokens {
+            let token = lexer.next_token();
+            assert_eq!(token, expected);
+        }
+    }
+
+    #[test]
+    fn test_mixed_input() {
+        let input = ".class { color: red; }";
+        let mut lexer = Lexer::new(input.to_string());
+
+        let expected_tokens = vec![
+            Token::Class,
+            Token::Ident("class".to_string()),
+            Token::LBrace,
+            Token::Ident("color".to_string()),
+            Token::Colon,
+            Token::Ident("red".to_string()),
+            Token::SemiColon,
+            Token::RBrace,
+            Token::Eof,
+        ];
+
+        for expected in expected_tokens {
+            let token = lexer.next_token();
+            assert_eq!(token, expected);
+        }
+    }
 }

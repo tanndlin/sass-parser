@@ -1,3 +1,5 @@
+use crate::types::{Class, Style, Token};
+
 use crate::types::*;
 
 pub struct Parser {
@@ -33,7 +35,13 @@ impl Parser {
         self.expect(Token::LBrace);
 
         while self.current_token() != Token::RBrace {
-            class.styles.push(self.parse_style());
+            let next_token = self.tokens[self.position].clone();
+            println!("{:?}", next_token);
+            if next_token == Token::Root {
+                class.sub_classes.push(self.parse_class());
+            } else {
+                class.styles.push(self.parse_style());
+            }
         }
 
         self.expect(Token::RBrace);
@@ -42,13 +50,31 @@ impl Parser {
     }
 
     fn parse_selector(&mut self) -> String {
-        match self.current_token() {
-            Token::Ident(s) => {
-                self.position += 1;
-                s
+        let mut selector = String::new();
+
+        loop {
+            match self.current_token() {
+                Token::Class => {
+                    selector.push('.');
+                    self.position += 1;
+                    selector.push_str(&self.parse_ident());
+                }
+                Token::DirectChild => {
+                    selector.push('>');
+                    self.position += 1;
+                }
+                Token::Root => {
+                    selector.push('&');
+                    self.position += 1;
+                }
+                Token::Ident(_) => {
+                    selector.push_str(&self.parse_ident());
+                }
+                _ => break,
             }
-            _ => panic!("Expected ident, got {:?}", self.current_token()),
         }
+
+        selector
     }
 
     fn current_token(&self) -> Token {
@@ -79,5 +105,109 @@ impl Parser {
             }
             _ => panic!("Expected ident, got {:?}", self.current_token()),
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_parse_empty() {
+        let tokens = vec![Token::Eof];
+        let mut parser = Parser::new(tokens);
+        let classes = parser.parse();
+        assert!(classes.is_empty());
+    }
+
+    #[test]
+    fn test_parse_single_class() {
+        let tokens = vec![
+            Token::Class,
+            Token::Ident("example".to_string()),
+            Token::LBrace,
+            Token::Ident("color".to_string()),
+            Token::Colon,
+            Token::Ident("red".to_string()),
+            Token::SemiColon,
+            Token::RBrace,
+            Token::Eof,
+        ];
+        let mut parser = Parser::new(tokens);
+        let classes = parser.parse();
+        assert_eq!(classes.len(), 1);
+        assert_eq!(classes[0].selector, ".example");
+        assert_eq!(classes[0].styles.len(), 1);
+        assert_eq!(
+            classes[0].styles[0],
+            Style {
+                name: "color".to_string(),
+                value: "red".to_string()
+            }
+        );
+    }
+
+    #[test]
+    fn test_parse_nested_classes() {
+        let tokens = vec![
+            Token::Class,
+            Token::Ident("parent".to_string()),
+            Token::LBrace,
+            Token::Root,
+            Token::Class,
+            Token::Ident("child".to_string()),
+            Token::LBrace,
+            Token::Ident("color".to_string()),
+            Token::Colon,
+            Token::Ident("blue".to_string()),
+            Token::SemiColon,
+            Token::RBrace,
+            Token::RBrace,
+            Token::Eof,
+        ];
+        let mut parser = Parser::new(tokens);
+        let classes = parser.parse();
+        assert_eq!(classes.len(), 1);
+        assert_eq!(classes[0].selector, ".parent");
+        assert_eq!(classes[0].sub_classes.len(), 1);
+        assert_eq!(classes[0].sub_classes[0].selector, ".child");
+        assert_eq!(classes[0].sub_classes[0].styles.len(), 1);
+        assert_eq!(
+            classes[0].sub_classes[0].styles[0],
+            Style {
+                name: "color".to_string(),
+                value: "blue".to_string()
+            }
+        );
+    }
+
+    #[test]
+    fn test_parse_direct_child_selector() {
+        let tokens = vec![
+            Token::Class,
+            Token::Ident("parent".to_string()),
+            Token::DirectChild,
+            Token::Class,
+            Token::Ident("child".to_string()),
+            Token::LBrace,
+            Token::Ident("margin".to_string()),
+            Token::Colon,
+            Token::Ident("10px".to_string()),
+            Token::SemiColon,
+            Token::RBrace,
+            Token::Eof,
+        ];
+        let mut parser = Parser::new(tokens);
+        let classes = parser.parse();
+        assert_eq!(classes.len(), 1);
+        assert_eq!(classes[0].selector, ".parent>.child");
+        assert_eq!(classes[0].styles.len(), 1);
+        assert_eq!(
+            classes[0].styles[0],
+            Style {
+                name: "margin".to_string(),
+                value: "10px".to_string()
+            }
+        );
     }
 }
