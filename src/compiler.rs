@@ -30,8 +30,8 @@ impl Compiler {
     }
 
     fn compile_sub_class(&self, class: &Class, parent_selector: &str) -> String {
-        let compiled_selector = if class.selector.contains("&") {
-            class.selector.clone().replace("&", parent_selector)
+        let compiled_selector = if class.selector.contains('&') {
+            class.selector.clone().replace('&', parent_selector)
         } else {
             format!("{} {}", parent_selector, class.selector)
         };

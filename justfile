@@ -7,3 +7,7 @@ hello:
 # Build with cargo
 build:
   cargo build -r
+
+# Run the binary
+run:
+  cargo run -r
