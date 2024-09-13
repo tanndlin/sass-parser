@@ -3,5 +3,9 @@ div {
 
     &>span {
         color: blue;
+
+        &.active {
+            color: green;
+        }
     }
 }

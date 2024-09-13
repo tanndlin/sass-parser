@@ -1,3 +1,4 @@
+mod compiler;
 mod lexer;
 mod parse;
 mod types;
@@ -11,6 +12,8 @@ fn main() {
 
     let mut parser = parse::Parser::new(tokens);
     let classes = parser.parse();
-
     println!("{:?}", classes);
+
+    let mut compiler = compiler::Compiler::new(classes);
+    compiler.compile("styles.css");
 }
