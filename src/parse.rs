@@ -1,7 +1,5 @@
 use crate::types::{Class, Style, Token};
 
-use crate::types::*;
-
 pub struct Parser {
     tokens: Vec<Token>,
     position: usize,
@@ -35,12 +33,11 @@ impl Parser {
         self.expect(Token::LBrace);
 
         while self.current_token() != Token::RBrace {
-            let next_token = self.tokens[self.position].clone();
-            println!("{:?}", next_token);
-            if next_token == Token::Root {
-                class.sub_classes.push(self.parse_class());
-            } else {
+            let next_next_token = self.tokens[self.position + 1].clone();
+            if next_next_token == Token::Colon {
                 class.styles.push(self.parse_style());
+            } else {
+                class.sub_classes.push(self.parse_class());
             }
         }
 

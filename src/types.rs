@@ -26,19 +26,3 @@ pub enum Token {
 
     Root,
 }
-
-impl Token {
-    pub fn to_string(&self) -> String {
-        match self {
-            Token::LBrace => "{".to_string(),
-            Token::RBrace => "}".to_string(),
-            Token::SemiColon => ";".to_string(),
-            Token::Colon => ":".to_string(),
-            Token::Eof => "EOF".to_string(),
-            Token::Ident(s) => s.to_string(),
-            Token::Class => ".".to_string(),
-            Token::DirectChild => ">".to_string(),
-            Token::Root => "&".to_string(),
-        }
-    }
-}
