@@ -8,4 +8,8 @@ div {
             color: green;
         }
     }
+
+    +p:hover {
+        color: yellow;
+    }
 }

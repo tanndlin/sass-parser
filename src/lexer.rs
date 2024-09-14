@@ -51,6 +51,10 @@ impl Lexer {
             // Selectors
             '.' => Token::Class,
             '>' => Token::DirectChild,
+            '*' => Token::All,
+            ',' => Token::And,
+            '+' => Token::After,
+            '~' => Token::Before,
 
             '&' => Token::Root,
 

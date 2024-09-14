@@ -10,3 +10,7 @@ div>span.active {
     color: green;
 }
 
+div +p:hover {
+    color: yellow;
+}
+

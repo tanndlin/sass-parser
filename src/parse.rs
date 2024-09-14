@@ -50,24 +50,11 @@ impl Parser {
         let mut selector = String::new();
 
         loop {
-            match self.current_token() {
-                Token::Class => {
-                    selector.push('.');
-                    self.position += 1;
-                    selector.push_str(&self.parse_ident());
-                }
-                Token::DirectChild => {
-                    selector.push('>');
-                    self.position += 1;
-                }
-                Token::Root => {
-                    selector.push('&');
-                    self.position += 1;
-                }
-                Token::Ident(_) => {
-                    selector.push_str(&self.parse_ident());
-                }
-                _ => break,
+            if self.current_token().is_selector() || self.current_token().is_ident() {
+                selector.push_str(self.current_token().to_string());
+                self.position += 1;
+            } else {
+                break;
             }
         }
 
