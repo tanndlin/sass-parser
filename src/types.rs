@@ -11,9 +11,9 @@ pub struct Class {
     pub sub_classes: Vec<Class>,
 }
 
-pub struct ShallowClass {
-    pub selector: String,
-    pub styles: Vec<Style>,
+pub struct ShallowClass<'a> {
+    pub selector: &'a String,
+    pub styles: &'a Vec<Style>,
 }
 
 impl Class {
@@ -25,13 +25,13 @@ impl Class {
         }
     }
 
-    pub fn shallow(self) -> (ShallowClass, Vec<Class>) {
+    pub fn shallow(&self) -> (ShallowClass, &Vec<Class>) {
         (
             ShallowClass {
-                selector: self.selector,
-                styles: self.styles,
+                selector: &self.selector,
+                styles: &self.styles,
             },
-            self.sub_classes,
+            &self.sub_classes,
         )
     }
 }
