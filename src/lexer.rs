@@ -83,10 +83,12 @@ impl Lexer {
         let mut tokens = Vec::new();
         loop {
             let tok = self.next_token();
-            tokens.push(tok.clone());
             if tok == Token::Eof {
+                tokens.push(tok);
                 break;
             }
+
+            tokens.push(tok);
         }
         tokens
     }

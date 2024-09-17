@@ -11,6 +11,31 @@ pub struct Class {
     pub sub_classes: Vec<Class>,
 }
 
+pub struct ShallowClass {
+    pub selector: String,
+    pub styles: Vec<Style>,
+}
+
+impl Class {
+    pub fn new(selector: String, styles: Vec<Style>, sub_classes: Vec<Class>) -> Class {
+        Class {
+            selector,
+            styles,
+            sub_classes,
+        }
+    }
+
+    pub fn shallow(self) -> (ShallowClass, Vec<Class>) {
+        (
+            ShallowClass {
+                selector: self.selector,
+                styles: self.styles,
+            },
+            self.sub_classes,
+        )
+    }
+}
+
 #[derive(Debug, Eq, PartialEq, Clone)]
 pub enum Token {
     LBrace,

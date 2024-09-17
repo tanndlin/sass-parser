@@ -1,7 +1,7 @@
 div {
     color: red;
 
-    &>span {
+    span {
         color: blue;
 
         &.active {

@@ -2,11 +2,11 @@ div {
     color: red;
 }
 
-div>span {
+div span {
     color: blue;
 }
 
-div>span.active {
+div span.active {
     color: green;
 }
 
