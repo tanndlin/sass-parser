@@ -14,6 +14,6 @@ fn main() {
     let classes = parser.parse();
     println!("{:?}", classes);
 
-    let mut compiler = compiler::Compiler::new(classes);
+    let compiler = compiler::Compiler::new(classes);
     compiler.compile("styles.css");
 }

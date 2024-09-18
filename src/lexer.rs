@@ -1,7 +1,7 @@
 use crate::types::Token;
 
 pub struct Lexer {
-    input: String,
+    chars: Vec<char>,
     position: usize,
     read_position: usize,
     ch: char,
@@ -10,7 +10,7 @@ pub struct Lexer {
 impl Lexer {
     pub fn new(input: String) -> Lexer {
         let mut l = Lexer {
-            input,
+            chars: input.chars().collect(),
             position: 0,
             read_position: 0,
             ch: '\0',
@@ -21,10 +21,10 @@ impl Lexer {
     }
 
     fn read_char(&mut self) {
-        if self.read_position >= self.input.len() {
+        if self.read_position >= self.chars.len() {
             self.ch = '\0';
         } else {
-            self.ch = self.input.chars().nth(self.read_position).unwrap();
+            self.ch = self.chars[self.read_position];
         }
 
         self.position = self.read_position;
@@ -32,7 +32,7 @@ impl Lexer {
     }
 
     fn next_token(&mut self) -> Token {
-        if self.position >= self.input.len() {
+        if self.position >= self.chars.len() {
             return Token::Eof;
         }
 
@@ -76,7 +76,7 @@ impl Lexer {
             self.read_char();
         }
 
-        self.input[position..self.position].to_string()
+        self.chars[position..self.position].iter().collect()
     }
 
     pub fn get_tokens(&mut self) -> Vec<Token> {
