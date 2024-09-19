@@ -1,6 +1,11 @@
 div {
     color: red;
 
+    input[type=number] {
+        margin: 0;
+        padding: 16px;
+    }
+
     span {
         color: blue;
 

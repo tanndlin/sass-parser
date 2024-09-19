@@ -154,7 +154,7 @@ mod tests {
         assert_eq!(classes.len(), 1);
         assert_eq!(classes[0].selector, ".parent");
         assert_eq!(classes[0].sub_classes.len(), 1);
-        assert_eq!(classes[0].sub_classes[0].selector, ".child");
+        assert_eq!(classes[0].sub_classes[0].selector, "&.child");
         assert_eq!(classes[0].sub_classes[0].styles.len(), 1);
         assert_eq!(
             classes[0].sub_classes[0].styles[0],
@@ -191,6 +191,38 @@ mod tests {
             Style {
                 name: "margin".to_string(),
                 value: "10px".to_string()
+            }
+        );
+    }
+
+    #[test]
+    fn parse_attribute_selector() {
+        let tokens = vec![
+            Token::Class,
+            Token::Ident("parent".to_string()),
+            Token::LBracket,
+            Token::Ident("data-attr".to_string()),
+            Token::Equals,
+            Token::Ident("'value'".to_string()),
+            Token::RBracket,
+            Token::LBrace,
+            Token::Ident("color".to_string()),
+            Token::Colon,
+            Token::Ident("red".to_string()),
+            Token::SemiColon,
+            Token::RBrace,
+            Token::Eof,
+        ];
+        let mut parser = Parser::new(tokens);
+        let classes = parser.parse();
+        assert_eq!(classes.len(), 1);
+        assert_eq!(classes[0].selector, r#".parent[data-attr='value']"#);
+        assert_eq!(classes[0].styles.len(), 1);
+        assert_eq!(
+            classes[0].styles[0],
+            Style {
+                name: "color".to_string(),
+                value: "red".to_string()
             }
         );
     }

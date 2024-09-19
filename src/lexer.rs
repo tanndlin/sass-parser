@@ -41,24 +41,12 @@ impl Lexer {
             self.read_char();
         }
 
-        let tok = match self.ch {
-            '{' => Token::LBrace,
-            '}' => Token::RBrace,
-            ';' => Token::SemiColon,
-            ':' => Token::Colon,
-            '\0' => Token::Eof,
-
-            // Selectors
-            '.' => Token::Class,
-            '>' => Token::DirectChild,
-            '*' => Token::All,
-            ',' => Token::And,
-            '+' => Token::After,
-            '~' => Token::Before,
-
-            '&' => Token::Root,
-
-            _ => Token::Ident(self.read_identifier()),
+        let tok = match Token::from_str(self.ch) {
+            Some(token) => token,
+            None => {
+                let ident = self.read_identifier();
+                Token::Ident(ident)
+            }
         };
 
         // Only read char if not ident
@@ -72,7 +60,26 @@ impl Lexer {
 
     fn read_identifier(&mut self) -> String {
         let position = self.position;
-        while is_letter(self.ch) {
+        // Check for a string
+        if self.ch == '"' {
+            self.read_char();
+            while self.ch != '"' {
+                self.read_char();
+            }
+            self.read_char();
+            return self.chars[position..self.position].iter().collect();
+        }
+
+        if self.ch == '\'' {
+            self.read_char();
+            while self.ch != '\'' {
+                self.read_char();
+            }
+            self.read_char();
+            return self.chars[position..self.position].iter().collect();
+        }
+
+        while self.ch.is_alphanumeric() || self.ch == '-' {
             self.read_char();
         }
 
@@ -163,6 +170,78 @@ mod tests {
             Token::Ident("color".to_string()),
             Token::Colon,
             Token::Ident("red".to_string()),
+            Token::SemiColon,
+            Token::RBrace,
+            Token::Eof,
+        ];
+
+        for expected in expected_tokens {
+            let token = lexer.next_token();
+            assert_eq!(token, expected);
+        }
+    }
+
+    #[test]
+    fn lex_attribute_selector_1() {
+        let input = "input[type=number]";
+        let mut lexer = Lexer::new(input.to_string());
+
+        let expected_tokens = vec![
+            Token::Ident("input".to_string()),
+            Token::LBracket,
+            Token::Ident("type".to_string()),
+            Token::Equals,
+            Token::Ident("number".to_string()),
+            Token::RBracket,
+            Token::Eof,
+        ];
+
+        for expected in expected_tokens {
+            let token = lexer.next_token();
+            assert_eq!(token, expected);
+        }
+    }
+
+    #[test]
+    fn lex_attribute_selector_2() {
+        let input = "[data-attr='value']";
+        let mut lexer = Lexer::new(input.to_string());
+
+        let expected_tokens = vec![
+            Token::LBracket,
+            Token::Ident("data-attr".to_string()),
+            Token::Equals,
+            Token::Ident("'value'".to_string()),
+            Token::RBracket,
+            Token::Eof,
+        ];
+
+        for expected in expected_tokens {
+            let token = lexer.next_token();
+            assert_eq!(token, expected);
+        }
+    }
+
+    #[test]
+    fn lex_basic_styles() {
+        let input = ".class { color: red; margin: 10px; padding: 0; }";
+        let mut lexer = Lexer::new(input.to_string());
+
+        let expected_tokens = vec![
+            Token::Class,
+            Token::Ident("class".to_string()),
+            Token::LBrace,
+            Token::Ident("color".to_string()),
+            Token::Colon,
+            Token::Ident("red".to_string()),
+            Token::SemiColon,
+            Token::Ident("margin".to_string()),
+            Token::Colon,
+            Token::Ident("10px".to_string()),
+            Token::SemiColon,
+            Token::Ident("padding".to_string()),
+            Token::Colon,
+            Token::Ident("0".to_string()),
             Token::SemiColon,
             Token::RBrace,
             Token::Eof,

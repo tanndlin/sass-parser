@@ -42,6 +42,9 @@ pub enum Token {
     RBrace,
     SemiColon,
     Colon,
+    LBracket,
+    RBracket,
+    Equals,
     Eof,
     Ident(String),
 
@@ -58,20 +61,24 @@ pub enum Token {
 
 impl Token {
     #[allow(dead_code)]
-    pub fn from_str(s: &str) -> Token {
+    pub fn from_str(s: char) -> Option<Token> {
         match s {
-            "{" => Token::LBrace,
-            "}" => Token::RBrace,
-            ";" => Token::SemiColon,
-            ":" => Token::Colon,
-            "." => Token::Class,
-            ">" => Token::DirectChild,
-            "*" => Token::All,
-            "," => Token::And,
-            "+" => Token::After,
-            "~" => Token::Before,
-            "&" => Token::Root,
-            _ => Token::Ident(s.to_string()),
+            '{' => Some(Token::LBrace),
+            '}' => Some(Token::RBrace),
+            ';' => Some(Token::SemiColon),
+            ':' => Some(Token::Colon),
+            '[' => Some(Token::LBracket),
+            ']' => Some(Token::RBracket),
+            '=' => Some(Token::Equals),
+            '.' => Some(Token::Class),
+            '>' => Some(Token::DirectChild),
+            '*' => Some(Token::All),
+            ',' => Some(Token::And),
+            '+' => Some(Token::After),
+            '~' => Some(Token::Before),
+            '&' => Some(Token::Root),
+            '\0' => Some(Token::Eof),
+            _ => None,
         }
     }
 
@@ -81,6 +88,9 @@ impl Token {
             Token::RBrace => "}",
             Token::SemiColon => ";",
             Token::Colon => ":",
+            Token::LBracket => "[",
+            Token::RBracket => "]",
+            Token::Equals => "=",
             Token::Eof => "EOF",
             Token::Ident(s) => s,
             Token::Class => ".",
@@ -104,6 +114,9 @@ impl Token {
                 | Token::Before
                 | Token::Root
                 | Token::Colon
+                | Token::LBracket
+                | Token::RBracket
+                | Token::Equals
         )
     }
 

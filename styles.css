@@ -2,6 +2,11 @@ div {
     color: red;
 }
 
+div input[type=number] {
+    margin: 0;
+    padding: 16px;
+}
+
 div span {
     color: blue;
 }
@@ -11,6 +16,4598 @@ div span.active {
 }
 
 div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div span.active {
+    color: green;
+}
+
+div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div span.active {
+    color: green;
+}
+
+div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div span.active {
+    color: green;
+}
+
+div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div span.active {
+    color: green;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div {
+    color: red;
+}
+
+div span.active div span {
+    color: blue;
+}
+
+div span.active div span.active {
+    color: green;
+}
+
+div span.active div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div {
+    color: red;
+}
+
+div span.active div div span {
+    color: blue;
+}
+
+div span.active div div span.active {
+    color: green;
+}
+
+div span.active div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div div {
+    color: red;
+}
+
+div span.active div div div div div span {
+    color: blue;
+}
+
+div span.active div div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div {
+    color: red;
+}
+
+div span.active div div div span {
+    color: blue;
+}
+
+div span.active div div div span.active {
+    color: green;
+}
+
+div span.active div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div {
+    color: red;
+}
+
+div span.active div div div div span {
+    color: blue;
+}
+
+div span.active div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div span.active div div div div +p:hover div div div div {
+    color: red;
+}
+
+div span.active div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div span.active div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div span.active div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div span.active {
+    color: green;
+}
+
+div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div span.active {
+    color: green;
+}
+
+div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div {
+    color: red;
+}
+
+div span {
+    color: blue;
+}
+
+div span.active {
+    color: green;
+}
+
+div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div {
+    color: red;
+}
+
+div div span {
+    color: blue;
+}
+
+div div span.active {
+    color: green;
+}
+
+div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div div {
+    color: red;
+}
+
+div div div div div span {
+    color: blue;
+}
+
+div div div div div span.active {
+    color: green;
+}
+
+div div div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div {
+    color: red;
+}
+
+div div div span {
+    color: blue;
+}
+
+div div div span.active {
+    color: green;
+}
+
+div div div +p:hover {
+    color: yellow;
+}
+
+div div div div {
+    color: red;
+}
+
+div div div div span {
+    color: blue;
+}
+
+div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div {
+    color: red;
+}
+
+div div div div +p:hover div span {
+    color: blue;
+}
+
+div div div div +p:hover div span.active {
+    color: green;
+}
+
+div div div div +p:hover div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div {
+    color: red;
+}
+
+div div div div +p:hover div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div +p:hover {
+    color: yellow;
+}
+
+div div div div +p:hover div div div div {
+    color: red;
+}
+
+div div div div +p:hover div div div div span {
+    color: blue;
+}
+
+div div div div +p:hover div div div div span.active {
+    color: green;
+}
+
+div div div div +p:hover div div div div +p:hover {
     color: yellow;
 }
 
