@@ -79,7 +79,7 @@ impl Lexer {
             return self.chars[position..self.position].iter().collect();
         }
 
-        while self.ch.is_alphanumeric() || self.ch == '-' {
+        while is_valid_ident_char(self.ch) {
             self.read_char();
         }
 
@@ -101,8 +101,8 @@ impl Lexer {
     }
 }
 
-fn is_letter(ch: char) -> bool {
-    ch.is_alphabetic() || ch == '_'
+fn is_valid_ident_char(ch: char) -> bool {
+    ch.is_alphanumeric() || ch == '_' || ch == '-'
 }
 
 #[cfg(test)]

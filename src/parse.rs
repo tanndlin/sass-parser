@@ -1,4 +1,4 @@
-use crate::types::{Class, Style, Token};
+use crate::types::*;
 
 pub struct Parser {
     tokens: Vec<Token>,
@@ -13,7 +13,7 @@ impl Parser {
         }
     }
 
-    pub fn parse(&mut self) -> Vec<Class> {
+    pub fn parse(&mut self) -> Vec<Block> {
         let mut classes = Vec::new();
 
         while self.current_token() != Token::Eof {
@@ -23,27 +23,22 @@ impl Parser {
         classes
     }
 
-    fn parse_class(&mut self) -> Class {
-        let mut class = Class {
-            selector: self.parse_selector(),
-            styles: Vec::new(),
-            sub_classes: Vec::new(),
-        };
+    fn parse_class(&mut self) -> Block {
+        let mut block = Block::new(self.parse_selector(), vec![], vec![]);
 
         self.expect(Token::LBrace);
 
         while self.current_token() != Token::RBrace {
             let next_next_token = self.tokens[self.position + 1].clone();
             if next_next_token == Token::Colon {
-                class.styles.push(self.parse_style());
+                block.styles.push(self.parse_style());
             } else {
-                class.sub_classes.push(self.parse_class());
+                block.sub_blocks.push(self.parse_class());
             }
         }
 
         self.expect(Token::RBrace);
-
-        class
+        block
     }
 
     fn parse_selector(&mut self) -> String {
@@ -153,11 +148,11 @@ mod tests {
         let classes = parser.parse();
         assert_eq!(classes.len(), 1);
         assert_eq!(classes[0].selector, ".parent");
-        assert_eq!(classes[0].sub_classes.len(), 1);
-        assert_eq!(classes[0].sub_classes[0].selector, "&.child");
-        assert_eq!(classes[0].sub_classes[0].styles.len(), 1);
+        assert_eq!(classes[0].sub_blocks.len(), 1);
+        assert_eq!(classes[0].sub_blocks[0].selector, "&.child");
+        assert_eq!(classes[0].sub_blocks[0].styles.len(), 1);
         assert_eq!(
-            classes[0].sub_classes[0].styles[0],
+            classes[0].sub_blocks[0].styles[0],
             Style {
                 name: "color".to_string(),
                 value: "blue".to_string()

@@ -5,35 +5,35 @@ pub struct Style {
 }
 
 #[derive(Debug, PartialEq, Clone)]
-pub struct Class {
+pub struct Block {
     pub selector: String,
     pub styles: Vec<Style>,
-    pub sub_classes: Vec<Class>,
+    pub sub_blocks: Vec<Block>,
 }
 
-pub struct ShallowClass<'a> {
-    pub selector: &'a String,
-    pub styles: &'a Vec<Style>,
-}
-
-impl Class {
-    pub fn new(selector: String, styles: Vec<Style>, sub_classes: Vec<Class>) -> Class {
-        Class {
+impl Block {
+    pub fn new(selector: String, styles: Vec<Style>, sub_blocks: Vec<Block>) -> Block {
+        Block {
             selector,
             styles,
-            sub_classes,
+            sub_blocks,
         }
     }
 
-    pub fn shallow(&self) -> (ShallowClass, &Vec<Class>) {
+    pub fn shallow(&self) -> (ShallowBlock, &Vec<Block>) {
         (
-            ShallowClass {
+            ShallowBlock {
                 selector: &self.selector,
                 styles: &self.styles,
             },
-            &self.sub_classes,
+            &self.sub_blocks,
         )
     }
+}
+
+pub struct ShallowBlock<'a> {
+    pub selector: &'a String,
+    pub styles: &'a Vec<Style>,
 }
 
 #[derive(Debug, Eq, PartialEq, Clone)]

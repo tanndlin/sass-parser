@@ -1,11 +1,11 @@
 use crate::types::*;
 
 pub struct Compiler {
-    classes: Vec<Class>,
+    classes: Vec<Block>,
 }
 
 impl Compiler {
-    pub fn new(classes: Vec<Class>) -> Compiler {
+    pub fn new(classes: Vec<Block>) -> Compiler {
         Compiler { classes }
     }
 
@@ -14,7 +14,7 @@ impl Compiler {
     }
 }
 
-pub fn compile(classes: Vec<Class>, filename: &str) {
+pub fn compile(classes: Vec<Block>, filename: &str) {
     println!("Compiling...");
 
     let mut css = String::new();
@@ -25,7 +25,7 @@ pub fn compile(classes: Vec<Class>, filename: &str) {
     std::fs::write(filename, css).expect("Unable to write file");
 }
 
-fn compile_top_level_class(class: &Class) -> String {
+fn compile_top_level_class(class: &Block) -> String {
     let (shallow, sub_classes) = class.shallow();
     let mut css = "".to_string();
     for sub_class in sub_classes {
@@ -35,7 +35,7 @@ fn compile_top_level_class(class: &Class) -> String {
     compile_class(&shallow) + &css
 }
 
-fn compile_sub_class(class: &Class, parent_selector: &str) -> String {
+fn compile_sub_class(class: &Block, parent_selector: &str) -> String {
     let compiled_selector = if class.selector.contains('&') {
         class.selector.replace('&', parent_selector)
     } else {
@@ -43,11 +43,11 @@ fn compile_sub_class(class: &Class, parent_selector: &str) -> String {
     };
 
     let (shallow, sub_classes) = (
-        &ShallowClass {
+        &ShallowBlock {
             selector: &compiled_selector,
             styles: &class.styles,
         },
-        &class.sub_classes,
+        &class.sub_blocks,
     );
 
     let mut css = compile_class(shallow);
@@ -58,7 +58,7 @@ fn compile_sub_class(class: &Class, parent_selector: &str) -> String {
     css
 }
 
-fn compile_class(class: &ShallowClass) -> String {
+fn compile_class(class: &ShallowBlock) -> String {
     let mut css = class.selector.to_string();
     css.push_str(" {\n");
 
