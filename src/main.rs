@@ -1,3 +1,5 @@
+#![deny(clippy::all)]
+
 mod compiler;
 mod lexer;
 mod parse;
@@ -13,15 +15,18 @@ fn main() {
     }
 
     let file_name = &args[1];
-    if !file_name.ends_with(".scss") {
-        eprintln!("Expected a .scss file, got {}", file_name);
+    if !std::path::Path::new(file_name)
+        .extension()
+        .map_or(false, |ext| ext.eq_ignore_ascii_case("scss"))
+    {
+        eprintln!("Expected a .scss file, got {file_name}");
         std::process::exit(1);
     }
 
     let result_file_name = file_name.replace(".scss", ".css");
 
     let input = utils::read_file(file_name);
-    let mut l = lexer::Lexer::new(input);
+    let mut l = lexer::Lexer::new(input.as_str());
     let tokens = l.get_tokens();
 
     let mut parser = parse::Parser::new(tokens);

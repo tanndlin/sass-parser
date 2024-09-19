@@ -1,4 +1,4 @@
-use crate::types::*;
+use crate::types::{Block, ShallowBlock};
 
 pub struct Compiler {
     classes: Vec<Block>,
@@ -27,7 +27,7 @@ pub fn compile(classes: Vec<Block>, filename: &str) {
 
 fn compile_top_level_class(class: &Block) -> String {
     let (shallow, sub_classes) = class.shallow();
-    let mut css = "".to_string();
+    let mut css = String::new();
     for sub_class in sub_classes {
         css.push_str(compile_sub_class(sub_class, shallow.selector).as_str());
     }

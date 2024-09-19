@@ -1,4 +1,4 @@
-use crate::types::*;
+use crate::types::{Block, Style, Token};
 
 pub struct Parser {
     tokens: Vec<Token>,
@@ -26,7 +26,7 @@ impl Parser {
     fn parse_class(&mut self) -> Block {
         let mut block = Block::new(self.parse_selector(), vec![], vec![]);
 
-        self.expect(Token::LBrace);
+        self.expect(&Token::LBrace);
 
         while self.current_token() != Token::RBrace {
             let next_next_token = self.tokens[self.position + 1].clone();
@@ -37,7 +37,7 @@ impl Parser {
             }
         }
 
-        self.expect(Token::RBrace);
+        self.expect(&Token::RBrace);
         block
     }
 
@@ -60,19 +60,22 @@ impl Parser {
         self.tokens[self.position].clone()
     }
 
-    fn expect(&mut self, expected: Token) {
-        if self.current_token() != expected {
-            panic!("Expected {:?}, got {:?}", expected, self.current_token());
-        }
+    fn expect(&mut self, expected: &Token) {
+        assert!(
+            !(&self.current_token() != expected),
+            "Expected {:?}, got {:?}",
+            expected,
+            self.current_token()
+        );
 
         self.position += 1;
     }
 
     fn parse_style(&mut self) -> Style {
         let name = self.parse_ident();
-        self.expect(Token::Colon);
+        self.expect(&Token::Colon);
         let value = self.parse_ident();
-        self.expect(Token::SemiColon);
+        self.expect(&Token::SemiColon);
         Style { name, value }
     }
 
@@ -211,7 +214,7 @@ mod tests {
         let mut parser = Parser::new(tokens);
         let classes = parser.parse();
         assert_eq!(classes.len(), 1);
-        assert_eq!(classes[0].selector, r#".parent[data-attr='value']"#);
+        assert_eq!(classes[0].selector, r".parent[data-attr='value']");
         assert_eq!(classes[0].styles.len(), 1);
         assert_eq!(
             classes[0].styles[0],
