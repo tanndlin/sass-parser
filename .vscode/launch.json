@@ -9,14 +9,16 @@
                 "args": [
                     "build",
                     "--bin=sass-parser",
-                    "--package=sass-parser"
+                    "--package=sass-parser",
                 ],
                 "filter": {
                     "name": "sass-parser",
                     "kind": "bin"
                 }
             },
-            "args": [],
+            "args": [
+                "stress.scss"
+            ],
             "cwd": "${workspaceFolder}"
         },
         {
