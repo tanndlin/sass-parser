@@ -1,20 +1,6 @@
 use crate::types::{Block, ShallowBlock};
 
-pub struct Compiler {
-    classes: Vec<Block>,
-}
-
-impl Compiler {
-    pub fn new(classes: Vec<Block>) -> Compiler {
-        Compiler { classes }
-    }
-
-    pub fn compile(self, file_name: &str) {
-        compile(self.classes, file_name);
-    }
-}
-
-pub fn compile(classes: Vec<Block>, filename: &str) {
+pub fn compile(classes: Vec<Block>) -> String {
     println!("Compiling...");
 
     let mut css = String::new();
@@ -22,7 +8,7 @@ pub fn compile(classes: Vec<Block>, filename: &str) {
         css.push_str(compile_top_level_class(&class).as_str());
     }
 
-    std::fs::write(filename, css).expect("Unable to write file");
+    css
 }
 
 fn compile_top_level_class(class: &Block) -> String {

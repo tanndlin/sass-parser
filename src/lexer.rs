@@ -1,6 +1,10 @@
 use crate::types::Token;
 
-pub struct Lexer {
+pub fn tokenize(input: String) -> Vec<Token> {
+    Lexer::new(input).get_tokens()
+}
+
+struct Lexer {
     chars: Vec<char>,
     position: usize,
     read_position: usize,
@@ -8,7 +12,7 @@ pub struct Lexer {
 }
 
 impl Lexer {
-    pub fn new(input: &str) -> Lexer {
+    fn new(input: String) -> Lexer {
         let mut l = Lexer {
             chars: input.chars().collect(),
             position: 0,
@@ -85,7 +89,7 @@ impl Lexer {
         self.chars[position..self.position].iter().collect()
     }
 
-    pub fn get_tokens(&mut self) -> Vec<Token> {
+    fn get_tokens(&mut self) -> Vec<Token> {
         let mut tokens = Vec::new();
         loop {
             let tok = self.next_token();
@@ -111,7 +115,7 @@ mod tests {
     #[test]
     fn test_single_char_tokens() {
         let input = "{};:";
-        let mut lexer = Lexer::new(input);
+        let mut lexer = Lexer::new(input.to_string());
 
         let expected_tokens = vec![
             Token::LBrace,
@@ -130,7 +134,7 @@ mod tests {
     #[test]
     fn test_selectors() {
         let input = ". > ";
-        let mut lexer = Lexer::new(input);
+        let mut lexer = Lexer::new(input.to_string());
 
         let expected_tokens = vec![Token::Class, Token::DirectChild, Token::Eof];
 
@@ -143,7 +147,7 @@ mod tests {
     #[test]
     fn test_identifiers() {
         let input = "hello world";
-        let mut lexer = Lexer::new(input);
+        let mut lexer = Lexer::new(input.to_string());
 
         let expected_tokens = vec![
             Token::Ident("hello".to_string()),
@@ -160,7 +164,7 @@ mod tests {
     #[test]
     fn test_mixed_input() {
         let input = ".class { color: red; }";
-        let mut lexer = Lexer::new(input);
+        let mut lexer = Lexer::new(input.to_string());
         let expected_tokens = vec![
             Token::Class,
             Token::Ident("class".to_string()),
@@ -182,7 +186,7 @@ mod tests {
     #[test]
     fn lex_attribute_selector_1() {
         let input = "input[type=number]";
-        let mut lexer = Lexer::new(input);
+        let mut lexer = Lexer::new(input.to_string());
 
         let expected_tokens = vec![
             Token::Ident("input".to_string()),
@@ -203,7 +207,7 @@ mod tests {
     #[test]
     fn lex_attribute_selector_2() {
         let input = "[data-attr='value']";
-        let mut lexer = Lexer::new(input);
+        let mut lexer = Lexer::new(input.to_string());
 
         let expected_tokens = vec![
             Token::LBracket,
@@ -223,7 +227,7 @@ mod tests {
     #[test]
     fn lex_basic_styles() {
         let input = ".class { color: red; margin: 10px; padding: 0; }";
-        let mut lexer = Lexer::new(input);
+        let mut lexer = Lexer::new(input.to_string());
 
         let expected_tokens = vec![
             Token::Class,

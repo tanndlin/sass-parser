@@ -1,19 +1,23 @@
 use crate::types::{Block, Style, Token};
 
-pub struct Parser {
+pub fn parse(tokens: Vec<Token>) -> Vec<Block> {
+    Parser::new(tokens).parse()
+}
+
+struct Parser {
     tokens: Vec<Token>,
     position: usize,
 }
 
 impl Parser {
-    pub fn new(tokens: Vec<Token>) -> Parser {
+    fn new(tokens: Vec<Token>) -> Parser {
         Parser {
             tokens,
             position: 0,
         }
     }
 
-    pub fn parse(&mut self) -> Vec<Block> {
+    fn parse(&mut self) -> Vec<Block> {
         let mut classes = Vec::new();
 
         while self.current_token() != Token::Eof {
