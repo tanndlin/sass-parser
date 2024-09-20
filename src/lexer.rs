@@ -1,4 +1,5 @@
 use crate::types::Token;
+static WHITESPACE: [char; 4] = ['\n', '\r', '\t', ' '];
 
 pub fn tokenize(input: String) -> Vec<Token> {
     Lexer::new(input).get_tokens()
@@ -40,8 +41,7 @@ impl Lexer {
             return Token::Eof;
         }
 
-        let whitespace = ['\n', '\r', '\t', ' '];
-        while whitespace.contains(&self.ch) {
+        while WHITESPACE.contains(&self.ch) {
             self.read_char();
         }
 
