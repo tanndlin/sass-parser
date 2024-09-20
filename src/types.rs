@@ -19,21 +19,6 @@ impl Block {
             sub_blocks,
         }
     }
-
-    pub fn shallow(&self) -> (ShallowBlock, &Vec<Block>) {
-        (
-            ShallowBlock {
-                selector: &self.selector,
-                styles: &self.styles,
-            },
-            &self.sub_blocks,
-        )
-    }
-}
-
-pub struct ShallowBlock<'a> {
-    pub selector: &'a String,
-    pub styles: &'a Vec<Style>,
 }
 
 #[derive(Debug, Eq, PartialEq, Clone)]
